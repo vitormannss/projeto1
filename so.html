@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página sobre Traição</title>
+</head>
+<body>
+
+    <header>
+        <h1>Traição</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#causas">Causas</a></li>
+            <li><a href="#consequencias">Consequências</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+        </section>
+
+        <section id="causas">
+            <h2>Causas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+        </section>
+
+        <section id="consequencias">
+            <h2>Consequências</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Informação adicional sobre traição</p>
+    </footer>
+
+</body>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media queries para design responsivo */
+@media screen and (min-width: 600px) {
+    main {
+        flex-direction: row;
+    }
+
+    section {
+        flex: 1;
+        margin-right: 20px;
+    }
+}
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var body = document.body;
+
+        body.onclick = function() {
+            body.style.backgroundColor = getRandomColor();
+        };
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    });
+</script>
